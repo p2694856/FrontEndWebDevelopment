@@ -1,0 +1,251 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
+
+body {
+
+  background-image: url('https://preview.redd.it/travis-scott-utopia-wallpaper-v0-0m1l6x811ueb1.png?auto=webp&s=3b1e0357fbbb3e784cfd0b441fb1d8e6c2a0f9bc');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+.centering {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#menuToggler {
+  display: none;
+}
+
+nav {
+  display: inline;
+  float: inline-end;
+  padding: 0.75em 0.75em;
+}
+
+nav>a {
+  color: white;
+  padding: 0.5rem 0.5rem;
+  text-decoration: none;
+
+}
+
+nav>a:hover {
+  box-shadow: inset 2px 10px 20px 2px black;
+}
+
+h1 {
+  color: whitesmoke;
+  padding-top: 0em;
+  display: inline
+}
+
+h2 {
+  color: whitesmoke;
+  font-style: italic;
+  font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+h3 {
+  color: whitesmoke;
+  font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+h4 {
+  color: black;
+}
+
+
+/* styling search bar */
+.search input[type=text] {
+  width: 50%;
+  height: 3em;
+  border-radius: 2em;
+  border: none;
+  padding-left: 1em;
+}
+
+.search {
+  display: block;
+  margin: 1em;
+}
+
+.fa fa-search {
+  font-size: 18px
+}
+
+#btnSearch:hover {
+  transform: scale(1.1);
+}
+
+#btnSearch:active {
+  transform: scale(0.9);
+}
+
+.search button {
+  color: whitesmoke;
+  display: inline;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+
+
+main {
+  position: relative;
+  padding: 3em 1.25px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+main article {
+  width: calc(100% / 1 - 5px);
+  border-radius: 0.5em;
+  overflow: hidden;
+  margin-bottom: 1.5em;
+  background: whitesmoke;
+
+}
+
+main article img {
+  width: 100%;
+  height: 10em;
+  object-fit: cover;
+}
+
+main article p,
+main article h4,
+main article audio {
+  padding: 0 5px;
+}
+
+main article audio {
+  width: 100%;
+}
+
+/* MOBILE STYLES */
+@media screen and (min-width: 0px) and (max-width: 499px) {
+
+  /* applies to screens smaller than 499px */
+
+  body {
+    background-image: url('https://preview.redd.it/travis-scott-utopia-wallpaper-v0-0m1l6x811ueb1.png?auto=webp&s=3b1e0357fbbb3e784cfd0b441fb1d8e6c2a0f9bc');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+
+    #menuToggler {
+      display: block;
+      float: inline-end;
+      justify-content: space-around;
+      color: whitesmoke;
+      font-size: 2em;
+      text-align: right;
+    }
+
+
+  }
+
+  nav {
+    display: none;
+    align-content: center;
+  }
+
+  nav.open {
+    display: flex;
+    align-content: center;
+    float: none;
+    padding-left: 0em;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+  }
+
+  h3 {
+    display: block;
+    text-align: center;
+  }
+
+
+  h2 {
+    display: block;
+    text-align: center;
+  }
+
+  h1 {
+    padding-top: 2em;
+  }
+
+  .search input[type=text] {
+    width: 80%;
+    height: 3em;
+    border-radius: 2em;
+    border: none;
+    padding-left: 1em;
+  }
+
+  .search {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+}
+
+
+
+/* TABLET STYLES */
+
+@media screen and (min-width: 500px) and (max-width: 999px) {
+
+  /* applies to screens wider than 499px */
+
+  body {
+    background-image: url('https://4kwallpapers.com/images/walls/thumbs_3t/12441.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+    background-position-x: center;
+
+  }
+
+  main article {
+    width: calc(100% / 2 - 5px);
+    border-radius: 0.5em;
+    overflow: hidden;
+    margin-bottom: 25px;
+    background: whitesmoke;
+  }
+}
+
+
+
+
+/* DESKTOP STYLES */
+
+@media screen and (min-width: 1000px) {
+
+  /* applies to screens wider than 999px */
+
+  body {
+    background-image: url('https://4kwallpapers.com/images/walls/thumbs_3t/12441.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position-x: center;
+  }
+
+  main article {
+    width: calc(100% / 3 - 5px);
+    border-radius: 0.5em;
+    overflow: hidden;
+    margin-bottom: 25px;
+    background: whitesmoke;
+  }
+
+
+}

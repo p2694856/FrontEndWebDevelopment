@@ -1,0 +1,286 @@
+body {
+
+  background-image: url('https://preview.redd.it/travis-scott-utopia-wallpaper-v0-0m1l6x811ueb1.png?auto=webp&s=3b1e0357fbbb3e784cfd0b441fb1d8e6c2a0f9bc');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+
+}
+
+#menuToggler {
+  display: none;
+}
+
+#myFace{
+  width:15em;
+  height:15em;
+  border-radius: 100%;
+}
+nav {
+  display: inline;
+  float: inline-end;
+  padding: 0.75em 0.75em;
+}
+
+nav>a {
+  color: white;
+  padding: 0.5rem 0.5rem;
+  text-decoration: none;
+
+}
+
+
+nav>a:hover {
+  box-shadow: inset 2px 10px 20px 2px black;
+}
+
+h1 {
+  color: whitesmoke;
+  padding-top: 0em;
+  display: inline
+}
+
+h2 {
+  color: whitesmoke;
+  font-style: italic;
+  font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+h3 {
+  color: whitesmoke;
+  font-size:x-large;
+}
+
+#container {
+  background-color: rgba(41, 41, 41, 0.8);
+  height: 5em;
+  border-top-left-radius: 0.5em;
+  border-top-right-radius: 0.5em;
+}
+
+h4 {
+  color: whitesmoke;
+  font-size: large;
+  font-weight: bold;
+}
+
+.flip-box {
+  background-color: transparent;
+  width: 20rem;
+  height: 20rem;
+  perspective: 1000px;
+
+
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front,
+.flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  display: grid;
+}
+
+.flip-box-front {
+
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border-radius: 0.5em;
+
+
+}
+
+#OldSchool {
+  background-image: url('../images/SugarHill.jpg');
+}
+
+#GoldenAge {
+  background-image: url('../images/NWA.webp');
+}
+
+#Conscious {
+  background-image: url('../images/theRoots.webp');
+}
+
+#EVW {
+  background-image: url(../images/tupac.webp);
+}
+
+#South {
+  background-image: url('../images/outkast.jpg');
+}
+
+#Bling {
+  background-image: url('../images/Jay-Z.webp');
+}
+
+#Blog {
+  background-image: url('../images/Drake.jpg');
+}
+
+#Trap {
+  background-image: url('../images/Future.webp');
+}
+
+.flip-box-back {
+  background-color: black;
+  transform: rotateY(180deg);
+  border-radius: 0.5em;
+}
+
+p {
+  white-space: pre-line;
+  color: whitesmoke;
+  font-size: large;
+  font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  justify-items: center;
+  align-items: center;
+  grid-gap: 2em;
+  padding-bottom: 1em;
+}
+
+.info{
+  background-color: rgba(41, 41, 41, 0.8);
+  padding: 1em;
+  border-radius: 25px;
+}
+
+.pLinks{
+  width: 7.5em;
+  height: 7.5em;
+}
+.pLinks:hover{
+  transform: scale(1.1);
+}
+.pLinksgit{
+  width:9em;
+  height:9em;
+}
+.pLinksgit:hover{
+  transform: scale(1.1);
+}
+.pInfo{
+  align-items: center;
+
+}
+/* MOBILE STYLES */
+@media screen and (min-width: 0px) and (max-width: 499px) {
+
+  /* applies to screens smaller than 499px */
+
+  body {
+    background-image: url('https://preview.redd.it/travis-scott-utopia-wallpaper-v0-0m1l6x811ueb1.png?auto=webp&s=3b1e0357fbbb3e784cfd0b441fb1d8e6c2a0f9bc');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+
+    #menuToggler {
+      display: block;
+      float: inline-end;
+      justify-content: space-around;
+      color: whitesmoke;
+      font-size: 2em;
+      text-align: right;
+    }
+
+
+  }
+
+  nav {
+    display: none;
+    align-content: center;
+  }
+
+  nav.open {
+    display: flex;
+    align-content: center;
+    float: none;
+    padding-left: 0em;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+  }
+
+  h3 {
+    display: block;
+    text-align: center;
+  }
+
+
+  h2 {
+    display: block;
+    text-align: center;
+  }
+
+  h1 {
+    padding-top: 2em;
+  }
+
+
+  
+}
+
+/* TABLET STYLES */
+
+@media screen and (min-width: 500px) and (max-width: 999px) {
+
+  /* applies to screens wider than 499px */
+
+  body {
+    background-image: url('https://4kwallpapers.com/images/walls/thumbs_3t/12441.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+    background-position-x: center;
+
+  }
+
+  main {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+
+
+/* DESKTOP STYLES */
+
+@media screen and (min-width: 1000px) {
+
+  /* applies to screens wider than 999px */
+
+  body {
+    background-image: url('https://4kwallpapers.com/images/walls/thumbs_3t/12441.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position-x: center;
+  }
+
+  main {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+
+}

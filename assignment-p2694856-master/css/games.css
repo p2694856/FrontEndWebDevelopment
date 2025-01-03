@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+  padding: 1%;
+}
+
+body {
+  background-color: black;
+  background-image: url('https://img1.picmix.com/output/stamp/normal/9/2/2/4/1654229_c9d81.gif');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position-x: center;
+  position: relative;
+  margin: 0;
+  min-height: 100%;
+  height: fit-content;
+  box-sizing: inherit;
+  padding-bottom: 10em;
+}
+
+
+#menuToggler {
+  display: none;
+}
+
+nav {
+  display: inline;
+  float: inline-end;
+  padding: 0.75em 0.75em;
+}
+
+nav>a {
+  color: white;
+  padding: 0.5rem 0.5rem;
+  text-decoration: none;
+
+}
+
+section {
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  display: flex;
+  justify-content: center;
+
+}
+
+.imageGame {
+  max-width: 100%;
+  height: auto;
+  align-self: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+.gameModes-btn {
+  text-align: center;
+  display: inline-block;
+  margin: 5px;
+  font-weight: bold;
+  padding: 10px 0 10px 10px;
+  background-color: lightgray;
+  text-shadow: -1px -1px black, 1px 1px white;
+  color: gray;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -o-border-radius: 7px;
+  border-radius: 7px;
+  box-shadow: 0 .2em gray;
+  cursor: pointer;
+
+}
+
+.move-btn {
+  text-shadow: 1px 1px pink, -1px -1px maroon;
+  line-height: 2.5em;
+  width: 8em;
+  text-align: center;
+
+  -webkit-border-radius: .75em;
+  -moz-border-radius: .75em;
+  -o-border-radius: .75em;
+  border-radius: .75em;
+  background-color: red;
+  -webkit-box-shadow: 0 .2em maroon;
+  -moz-box-shadow: 0 .2em maroon;
+  -o-box-shadow: 0 .2em maroon;
+  box-shadow: 0 .2em maroon;
+  color: red;
+  margin: 5px;
+  background-color: red;
+  background-image: -o-linear-gradient(left top, pink 3%, red 22%, maroon 99%);
+  background-image: -moz-linear-gradient(left top, pink 3%, red 22%, maroon 99%);
+  background-image: -webkit-linear-gradient(left top, pink 3%, red 22%, maroon 99%);
+  background-image: linear-gradient(left top, pink 3%, red 22%, maroon 99%);
+  cursor: pointer;
+  padding-left: 5px;
+  display: inline-block;
+
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 10em;
+}
+
+.travAni {
+  width: 7.5em;
+  height: 10em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.travAni:active {
+  box-shadow: none;
+  transform: scale(0.9);
+}
+
+.move-btn:active {
+  box-shadow: none;
+  position: relative;
+  top: .2em;
+  transform: scale(0.9);
+  ;
+}
+
+.gameModes-btn:active {
+  box-shadow: none;
+  position: relative;
+  top: .2em;
+  transform: scale(1);
+  ;
+}
+
+
+
+nav>a:hover {
+  box-shadow: inset 2px 10px 20px 2px whitesmoke;
+}
+
+h1 {
+  color: whitesmoke;
+  padding-top: 0em;
+  display: inline
+}
+
+h2 {
+  color: whitesmoke;
+  font-style: italic;
+  font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+h3 {
+  color: whitesmoke;
+}
+
+h4 {
+  color: whitesmoke;
+}
+
+#Game1 {
+  border: 5px solid darkslategrey;
+  background-color: white;
+  height: 70%;
+  width: 70%;
+  display: none;
+}
+
+#Game2 {
+  border: 5px solid darkslategrey;
+  background-color: white;
+  height: 50%;
+  width: 60%;
+  display: none;
+}
+
+.gameModes-btn:hover {
+  transform: scale(1.2);
+}
+
+#Game1.openGame1 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#Game2.openGame2 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#Game1.closeGame1 {
+  display: none;
+}
+
+#Game2.closeGame2 {
+  display: none;
+}
+
+h5 {
+  display: none;
+}
+
+img {
+  color: whitesmoke;
+}
+
+.GameExplanation{
+  display:flex;
+  justify-content: space-between;
+  
+  
+}
+
+.gameExpalain {
+  padding: 1%;
+  width:50%;
+}
+p {
+  color:whitesmoke;
+  text-align: center;
+  font-size: large;
+  font-style: italic;
+  font-family: 'Times New Roman', Times, serif;
+}
+/* MOBILE STYLES */
+@media screen and (min-width: 0px) and (max-width: 499px) {
+
+  /* applies to screens smaller than 499px */
+
+  body {
+
+    background-color: black;
+
+    #menuToggler {
+      display: block;
+      float: inline-end;
+      justify-content: space-around;
+      color: whitesmoke;
+
+      font-size: 2em;
+
+      text-align: right;
+    }
+
+
+  }
+
+  nav {
+    display: none;
+    align-content: center;
+  }
+
+  nav.open {
+    display: flex;
+    align-content: center;
+    float: none;
+    padding-left: 0em;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+  }
+
+  h3 {
+    display: block;
+    text-align: center;
+  }
+
+
+  h2 {
+    display: block;
+    text-align: center;
+  }
+
+  h1 {
+    padding-top: 2em;
+  }
+
+
+  .gameModes-btn {
+    display: flex;
+    justify-content: center;
+  }
+
+}
+
+
+
+/* TABLET STYLES */
+
+@media screen and (min-width: 500px) and (max-width: 999px) {
+
+  /* applies to screens wider than 499px */
+
+  .gameModes-btn {
+    display: flex;
+    justify-content: center;
+  }
+
+  #Game1 {
+    height: 60%;
+    width: 60%
+  }
+
+
+}
+
+
+
+
+/* DESKTOP STYLES */
+
+@media screen and (min-width: 1000px) {
+
+  /* applies to screens wider than 999px */
+
+  #buttonUp {
+    display: none;
+  }
+
+  #buttonDown {
+    display: none;
+  }
+
+  #buttonRight {
+    display: none;
+  }
+
+  #buttonLeft {
+    display: none;
+  }
+
+  #Game1 {
+    height: 40%;
+    width: 40%
+  }
+
+
+}
